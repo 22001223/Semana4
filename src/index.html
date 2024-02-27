@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tarea #4</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Tarea #4</a>
+        </div>
+    </nav>
+
+    <div class="content">
+
+        <div id="inputs" class="card darken-1">
+            <div class="card-content black-text margin-20px">
+                <span>OPCIONES</span><br>
+                <input placeholder="Limite Inferior" type="number" name="inferior" id="inferior">
+                <input placeholder="Limite Superior" type="number" name="superior" id="superior">
+                
+                <div class="switch">
+                    <label>
+                        <span>Mostrar una</span>
+                        <input id="checkbox" type="checkbox">
+                        <span class="lever"></span>
+                    </label>
+                </div>
+
+                <div class="center-btn">
+                    <button 
+                        class="btn waves-effect waves-light col s12" 
+                        type="submit" 
+                        name="action"
+                        onclick="showImages()"
+                    >MOSTRAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="image" class="card darken-1">
+            <div class="card-content black-text margin-20px">
+                <span>IMAGENES</span>
+                <div id="result" class="img-wrapper"></div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
